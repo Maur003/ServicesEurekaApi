@@ -7,8 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MicroservicioUsuarios" />
         <module name="MicroservicioEureka" />
+        <module name="MicroservicioUsuarios" />
+        <module name="MicroservicioCommon" />
+        <module name="MicroservicioSpringGateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,7 +19,9 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MicroservicioCommon" options="-parameters" />
       <module name="MicroservicioEureka" options="-parameters" />
+      <module name="MicroservicioSpringGateway" options="-parameters" />
       <module name="MicroservicioUsuarios" options="-parameters" />
       <module name="MicroservicoEureka" options="-parameters" />
     </option>

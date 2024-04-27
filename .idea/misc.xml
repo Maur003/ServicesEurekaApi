@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/MicroservicoEureka/pom.xml" />
         <option value="$PROJECT_DIR$/MicroservicioUsuarios/pom.xml" />
         <option value="$PROJECT_DIR$/MicroservicioEureka/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroservicioSpringGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroservicioCommon/pom.xml" />
       </list>
     </option>
   </component>
