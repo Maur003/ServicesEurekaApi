@@ -1,6 +1,6 @@
 package com.co.bonilla.usuarios.service;
 
-import com.co.bonilla.usuarios.entity.Alumno;
+import com.co.bonilla.common.usuario.models.entity.Alumno;
 import com.co.bonilla.usuarios.repository.AlumnoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;

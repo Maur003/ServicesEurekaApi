@@ -1,14 +1,9 @@
 package com.co.bonilla.usuarios.service;
 
-import com.co.bonilla.usuarios.entity.Alumno;
+import com.co.bonilla.common.service.CommonService;
+import com.co.bonilla.common.usuario.models.entity.Alumno;
 
-import java.util.Optional;
-
-public interface AlumnoService {
-
-    public Iterable<Alumno> findAll();
-
-    public Optional<Alumno> findById(Long id);
+public interface AlumnoService extends CommonService<Alumno> {
 
     public Alumno save(Alumno alumno);
 

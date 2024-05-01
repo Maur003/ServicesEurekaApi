@@ -1,16 +1,17 @@
 package com.co.bonilla.common.service.implementation;
 
 import com.co.bonilla.common.service.CommonService;
-import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
 
-@AllArgsConstructor
+//@AllArgsConstructor
 public class CommonServiceImpl<E, R extends CrudRepository<E, Long>> implements CommonService<E> {
-    private final R commonRepository;
+	@Autowired
+    private R commonRepository ;
 
     @Override
     @Transactional(readOnly = true)
