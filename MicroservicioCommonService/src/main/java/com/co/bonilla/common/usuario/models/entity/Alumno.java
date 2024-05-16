@@ -6,7 +6,7 @@ import java.util.Date;
 
 
 @Entity
-@Table
+@Table (name = "alumnos")
 
 public class Alumno {
 

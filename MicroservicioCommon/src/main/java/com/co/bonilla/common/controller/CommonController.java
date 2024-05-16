@@ -24,17 +24,17 @@ public class CommonController <E, S extends CommonService<E>>{
         Map<String, Object> response = new HashMap<String, Object>();
 
         response.put("balanceador", balanceadorTest);
-        response.put("alumno", service.findAll());
+        response.put("entidades", service.findAll());
 
         return ResponseEntity.ok().body(response);
     }
 
-    @GetMapping("/listarAlumnos")
-    public ResponseEntity<?> listarAlumnos(){
+    @GetMapping("/listar")
+    public ResponseEntity<?> listar(){
         return ResponseEntity.ok().body(service.findAll());
     }
 
-    @GetMapping("/buscarAlumno/{id}")
+    @GetMapping("/buscarPorId/{id}")
     public ResponseEntity<?> ver(@PathVariable Long id){
         Optional<E> entity = service.findById(id);
 
@@ -44,13 +44,13 @@ public class CommonController <E, S extends CommonService<E>>{
         return ResponseEntity.ok().body(entity);
     }
 
-    @PostMapping("/crearAlumno")
+    @PostMapping("/crear")
     public ResponseEntity<?> crear(@RequestBody E entity){
         return ResponseEntity.status(HttpStatus.CREATED).body(service.save(entity));
     }
 
 
-    @DeleteMapping("/eliminarAlumno/{id}")
+    @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<?> eliminar(@PathVariable Long id){
         service.deleteById(id);
         return ResponseEntity.noContent().build();

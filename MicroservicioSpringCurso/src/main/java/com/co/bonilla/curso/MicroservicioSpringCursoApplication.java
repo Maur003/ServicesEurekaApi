@@ -10,9 +10,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-@ComponentScan ({"com.co.bonilla.common.usuario.models.entity.*", "com.co.bonilla.curso.models.entity.*"})
-@EnableJpaRepositories({"com.co.bonilla.common.usuario.models.entity.*", "com.co.bonilla.curso.models.entity.*"})
-@EntityScan({"com.co.bonilla.common.usuario.models.entity.*", "com.co.bonilla.curso.models.entity.*"})
+@ComponentScan ({"com.co.bonilla.common.usuario.models.entity.*"})
+@EnableJpaRepositories({"com.co.bonilla.common.usuario.models.entity.*"})
+@EntityScan({"com.co.bonilla.common.usuario.models.entity.*"})
 public class MicroservicioSpringCursoApplication {
 
 	public static void main(String[] args) {

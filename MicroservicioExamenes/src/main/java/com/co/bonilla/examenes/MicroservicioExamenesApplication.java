@@ -1,4 +1,4 @@
-package com.co.bonilla.usuarios;
+package com.co.bonilla.examenes;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,11 +12,10 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @ComponentScan ({"com.co.bonilla.common.usuario.models.entity.*"})
 @EnableJpaRepositories({"com.co.bonilla.common.usuario.models.entity.*"})
 @EntityScan({"com.co.bonilla.common.usuario.models.entity.*"})
-public class ServiciosParcialCrudApplication {
+public class MicroservicioExamenesApplication {
 
 	public static void main(String[] args) {
-
-		SpringApplication.run(ServiciosParcialCrudApplication.class, args);
+		SpringApplication.run(MicroservicioExamenesApplication.class, args);
 	}
 
 }
