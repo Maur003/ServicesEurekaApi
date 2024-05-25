@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.co.bonilla.gateway</groupId>
-	<artifactId>MicroservicioSpringGateway</artifactId>
+	<artifactId>microservicio-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>MicroservicioSpringGateway</name>
+	<name>microservicio-gateway</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
